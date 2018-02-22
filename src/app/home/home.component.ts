@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this._svc.getQoD().subscribe(result => this.data = this.MapResult( result));
   }
-
+//TOD0 
  private MapResult(result: IQod):IQuote{
      return{
        title: result.contents.quotes[0].title,
